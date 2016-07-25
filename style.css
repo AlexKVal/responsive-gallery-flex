@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-family: Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+.top-bar {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 12px 0;
+	z-index: 1000;
+	height: 50px;
+	box-shadow: 0 4px 4px #999, 0 1px 3px #999 inset;
+	background: linear-gradient(#f2f2f2, #bbb);
+	transition: .2s;
+}
+.top-bar:hover {
+	box-shadow: 0 8px 10px #999;
+	transition: .3s;
+}
+.header {
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 2px white;
+}
+.header-by {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: #777;
+}
+@media (max-width: 490px) {
+	.top-bar {
+		padding: 16px 0;
+	}
+	.header {
+		font-size: 18px;
+		letter-spacing: normal;
+	}
+	.header-by {
+		font-size: 14px;
+	}
+}
+
+/* Gallery */
+
+.wrapper {
+	padding: 90px 2vw;
+}
+@media (max-width: 880px) {
+	.wrapper { padding-top: 75px; }
+}
+@media (max-width: 450px) {
+	.wrapper { padding-top: 60px; }
+}
+
+.cards-container {
+  display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: -2% -2% 0;
+}
+
+.photo-card {
+  margin: 2%;
+  width: 29%;
+
+	border-radius: 4px;
+	border: 1px solid transparent;
+	box-shadow: 0 3px 8px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.5) inset;
+	transition: .2s;
+}
+.photo-card:hover {
+	border: 1px solid #ddd;
+	box-shadow: 0 16px 20px -4px rgba(0,0,0,.5);
+	transition: .3s;
+}
+@media (max-width: 780px) {
+	.photo-card {
+		width: 45%;
+	}
+}
+@media (max-width: 450px) {
+	.photo-card {
+		width: 95%;
+	}
+}
+
+.photo {
+	display: block;
+	padding: 10px;
+	width: 100%;
+}
