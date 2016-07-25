@@ -129,6 +129,9 @@ a {
 	border: 1px solid transparent;
 	box-shadow: 0 3px 8px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.5) inset;
 	transition: .2s;
+
+	display: flex;
+  align-items: center;
 }
 .photo-card:hover {
 	border: 1px solid #ddd;
